@@ -117,8 +117,8 @@ input, select, textarea {
 
 #intro {
 	padding: 4em 4em 2em 4em;
-	padding-left: 300px;
-	padding-right: 300px;
+	padding-left: 200px;
+	padding-right: 200px;
 	background-color:#18191a;
 	border-radius: 4px;
 	text-align: center;
@@ -3404,7 +3404,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 2em 0 6em 0 ;
 		background-color: #18191a;
 		align-content: center;
 		text-align: center;
