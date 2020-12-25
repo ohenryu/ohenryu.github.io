@@ -1,5 +1,5 @@
 //Set initial map view location
-var map = L.map('mapid').setView([49.429471, -123.104069], 10);
+var map = L.map('mapid').setView([49.420600, -123.104069], 11);
 
 //Set basemap
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
