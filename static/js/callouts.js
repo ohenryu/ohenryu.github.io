@@ -1,6 +1,6 @@
 //Set initial map view location
 var map = L.map('mapid', {
-  center: [49.423600, -123.107069],
+  center: [49.427600, -123.107069],
   zoom: 11,
   zoomControl: false,
   fullscreenControl: true

@@ -39,7 +39,7 @@ var chart = new Chart(ctx, {
         title: {
             display: true,
             text: 'Breakdown of Call-out Reasons (2018-2020)',
-            fontFamily: "'Open Sans Bold', sans-serif",
+            fontFamily: "'Source Sans Pro', sans-serif",
             fontSize: 18,
             fontStyle: 'normal',
             fontColor: 'rgba(158, 162, 163)',
@@ -64,8 +64,8 @@ var chart = new Chart(ctx, {
             xAxes: [{
                 ticks: {
                     beginAtZero:true,
-                    fontFamily: "'Open Sans Bold', sans-serif",
-                    fontSize:12,
+                    fontFamily: "'Source Sans Pro', sans-serif",
+                    fontSize:13,
                     fontColor: 'rgba(158, 162, 163)'
                 },
                 scaleLabel:{
@@ -81,8 +81,8 @@ var chart = new Chart(ctx, {
                     display:false,
                 },
                 ticks: {
-                    fontFamily: "'Open Sans Bold', sans-serif",
-                    fontSize:12,
+                    fontFamily: "'Source Sans Pro', sans-serif",
+                    fontSize:13,
                     fontColor: 'rgba(158, 162, 163)'
                 },
                 stacked: true
