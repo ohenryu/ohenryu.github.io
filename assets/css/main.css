@@ -116,9 +116,8 @@ input, select, textarea {
 /* Intro */
 
 #intro {
-	padding: 4em 4em 2em 4em;
-	padding-left: 200px;
-	padding-right: 200px;
+	margin: 2em 8em;
+	padding: 2em 4em 0em 4em;
 	background-color:#18191a;
 	border-radius: 4px;
 	text-align: center;
@@ -203,7 +202,7 @@ input, select, textarea {
 		font-weight: 300;
 	}
 		#text-indent {
-			text-indent: 3em;
+			text-indent: 1.5em;
 			text-align: left;
 		}
 
@@ -334,7 +333,6 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-bottom: solid 1px #c9c9c9;
-		margin: 2em 0;
 	}
 
 		hr.major {
@@ -2422,6 +2420,14 @@ input, select, textarea {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-moz-flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
 	}
 
 		table tbody tr {
@@ -2437,6 +2443,7 @@ input, select, textarea {
 		table td {
 			padding: 0.55em 0.55em;
 			font-size: 0.9em;
+			vertical-align: middle;
 		}
 
 		table th {
@@ -2873,7 +2880,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 3em 0 0.1em 0 ;
+		padding: 3em 0 0em 0 ;
 		align-content: center;
 		text-align: center;
 	}
@@ -2884,7 +2891,7 @@ input, select, textarea {
 			color: inherit;
 			font-weight: 500;
 			letter-spacing: 0.2em;
-			margin: 0 0 2.5em 0;
+			margin: 0 0 1.5em 0;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -3200,7 +3207,6 @@ input, select, textarea {
 		height: 1px;
 		background: #333;
 		background-image: linear-gradient(to right, #ccc, #333, #ccc);
-		padding: 0%;
 	}
 
 /* Main */
@@ -3585,7 +3591,7 @@ input, select, textarea {
 
 /* Charts */
 #charts {
-	padding: 2em 0 2em 0 ;
+	padding: 2em -2em 2em 0 ;
 	text-align: center;
 }
 
@@ -3616,7 +3622,7 @@ input, select, textarea {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	width: calc(100% + 0em);
-	margin: -1.5em 0 0.5em 0em;
+	margin: 2em 0 2em 0;
 }
 
 	.charts .chart {
@@ -3636,12 +3642,12 @@ input, select, textarea {
 		-ms-flex-wrap: nowrap;
 		flex-wrap: nowrap;
 		width: 100%;
-		margin: -1.5em 0 0.5em 0em;
+		margin-top: 2em;
 	}
 
 		.charts .chart {
 			width: 100%;
-			margin: 1em 0 2em 1em;
+			margin-top: 2em;
 		}
 
 			.charts .chart:last-child {
@@ -3653,15 +3659,23 @@ input, select, textarea {
 
 	.charts .chart {
 		padding: 0em 1em 0em 0em;
+		margin-top: 2em;
 	}
 }
 
 @media screen and (max-width: 480px) {
 
 	.chart {
-		padding: 1em 0 2em 1em;
+		padding: 0em 1em 0em 0em;
+		margin-top: 2em;
 	}
 }
+
+#about {
+	padding: 1em, 0;
+	margin: 0, 0;
+}
+
 
 #mapid { 
 	height: 550px;
