@@ -3725,3 +3725,24 @@ input, select, textarea {
 #desc {
 	margin-bottom: 1.2em;
 }
+
+figcaption {
+	font-size: 0.9em;
+	font-style: italic;
+	margin-bottom: 2em;
+}
+
+#table-compost {
+	margin-top: 2em;
+	margin-bottom: 3em;
+	width: 70%;
+	text-align: left;
+}
+	#table-compost th {
+		text-align: left;
+		padding-left: 2em;
+	}
+	#table-compost td {
+		text-align: left;
+		padding-left: 2em;
+	}

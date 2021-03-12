@@ -6,38 +6,13 @@
 -->
 <html>
 	<head>
-		<title>SAR Call-outs in the North Shore Mountains</title>
+		<title>UBC SEEDS Compost Bin Contamination</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="icons8-location-96.png"></link>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Chart.js Script-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
-
-		<!-- Leaflet's CSS -->
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-		crossorigin=""/>
-		
-	   <!-- Leaflet's Script -->
-	   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-		crossorigin=""></script>
-		 
-		<!-- Leaflet Heat Script-->
-		<script src="static/js/leaflet-heat.js"></script>
-		<script src="static/js/HeatLayer.js"></script>
-
-		<!-- Grouped Layer Control Script -->
-		<script src="assets/js/leaflet.groupedlayercontrol.min.js"></script>
-
-		<!-- Grouped Layer Control CSS -->
-	   <link rel="stylesheet" href="assets/css/leaflet.groupedlayercontrol.min.css" />
-
-	   <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-	   <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 
 	</head>
 
@@ -46,66 +21,63 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+				<header id="header">
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Henry Tang</span>
-								</a>
-
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
-					</header>
+					<div class="container" id="navbar">
+						<a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+						<nav id=nav_new>
+							<ul>
+								<li><a href="index.html">Projects</a></li>
+								<li><a href="uploads//media//Resume.pdf" target=“_blank” rel=“noopener noreferrer”>Resume</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>SAR Call-outs in the North Shore </br>Mountains (2018 - 2020)</h1>
-							<p id=text-indent>The North Shore Mountains are an iconic part of Vancouver’s natural beauty - however, as beautiful as they are, the mountains can be a dangerous place for the unprepared and inexperienced. From avalanches to rolled ankles to getting lost, dozens of call-outs are made to Search and Rescue (SAR) groups every year. The two SAR teams monitoring the North Shore Mountains are North Shore Rescue (NSR) and Lions Bay Search and Rescue (LBSAR) - these groups are comprised of volunteers that are on standby 24 hours a day, 365 days a year. To support these hard-working and dedicated organizations, please consider making a donation to <a href='https://www.northshorerescue.com/donate/' target="_blank" rel="noopener noreferrer">NSR</a> and <a href='https://www.canadahelps.org/en/dn/9468' target="_blank" rel="noopener noreferrer">LBSAR.</a></p>
+							<h1>UBC SEEDS Compost Bin Contamination</h1>
 
-							<p id=text-indent>Given both the surge in popularity of hiking and surge in number of SAR call-outs over the past couple of years, I was curious where most of these call-outs were taking place and what was the primary reason for the call-outs. I put together a <a href='https://drive.google.com/file/d/1xklsODVZ8WP6mF3Z7T1HnNIUcXrwaguJ/view?usp=sharing' target="_blank" rel="noopener noreferrer">spreadsheet</a> of call-outs in the past 3 years based off of Emergency Management BC’s <a href='https://www2.gov.bc.ca/gov/content/safety/emergency-preparedness-response-recovery/emergency-response-and-recovery/incident-summaries' target="_blank" rel="noopener noreferrer">weekly incident summaries</a> and using NSR’s and LBSAR’s Facebook posts for more detailed descriptions.  As this analysis is focused on the North Shore Mountains, I did not include call-outs outside the region (as defined by <a href="https://baggerbook.ca/table-of-contents%2Findex" target="_blank" rel="noopener noreferrer">David Crerar et al.</a>), call-outs in urban areas (e.g. missing people) or call-outs on trails close to urban areas (e.g. Quarry Rock, Lynn Canyon). I also omitted call-outs where the SAR teams were stood down due to erroneous reports, the subject(s) self-rescuing, or another agency taking over the call.</p>
+							<p style="font-weight: 550;font-size: 18px;">Link to the full report (pdf) available <a href='https://sustain.ubc.ca/sites/default/files/seedslibrary/GEOG_371_Compost%20Contamination%20at%20UBC%20An%20Investigation%20into%20Attitudes%20and%20Schaefer%20Bin%20Accessibility_FinalReport.pdf' target=“_blank” rel=“noopener noreferrer” style="font-weight: 550;">here.</a></p>
 
-							<div id='charts'>
-								<section class="charts chart">
-									<article class="chart" id=left>
-									</style>
-									<canvas id="monthchart" width="100" height="65"></canvas>
-									<script src="static/js/monthchart.js"></script></br>
-									</article>
+							<p id=text-indent>The Social Ecological Economic Development Studies<a href='https://sustain.ubc.ca/teaching-applied-learning/seeds-sustainability-program' target=“_blank” rel=“noopener noreferrer”> (SEEDS) </a> Sustainability Program at the University of British Columbia (UBC) collaborates with students and faculty to develop sustainable ideas, policies, and practices on campus. My team was tasked by the Campus & Community Planning department to find the locations of all the compost bins on campus and collect data for each collection site (this report covers the northern half of campus only). The department wanted to plan more effective routes for their waste management trucks but lacked knowledge of the bin locations as they were often moved around according to demand. In addition, the department wanted to know if there was any correlation between accessibility of the bins and contamination levels. Over the course of three consecutive weeks, we used ArcGIS Collector to collect the following data:
+							</p>
 
-									<article class="chart" id=right>
-										<canvas id="yearchart" width="100" height="65" responsive=TRUE></canvas>
-										<script src="static/js/yearchart.js"></script></br>
-									</article>
-								</section>
-							</div>
+							<table id=table-compost><thead><tr><th>Field</th><th>Description</th></tr></thead>
+								<tr><td>Date</td><td>Date of data collection</td></tr>
+								<tr><td>Location</td><td>Location of bin collection site, manually pinned on ArcGIS Collector</td></tr>
+								<tr><td>Number of Bins</td><td>Amount of compost bins at each bin collection site</td></tr>
+								<tr><td>Bin Fullness</td><td>Visual assessment of how much compost was in the bin, measured by %</td></tr>
+								<tr><td>Contamination Rating</td><td>Rating on scale of 1 - 5 for entire site after looking through each bin</td></tr>
+								<tr><td>Accessibility</td><td>Location of bin collection site relative to building entrances and major walkways</td></tr>
+								<tr><td>Photos</td><td>Added if there were bins with exceptionally high levels of contamination</td></tr>
+							</table>
 
-							<p id=text-indent>As British Columbia’s busiest SAR team, North Shore Rescue alone handles over a hundred calls each year. In 2008, only <a href="https://montecristomagazine.com/magazine/winter-2019/north-shore-rescue" target="_blank" rel="noopener noreferrer">70 call-outs</a>  were made but since 2014, there has been a sharp increase in the number of call-outs with record breaking years in 2015 (139 calls), 2018 (144 calls) and 2020 (151 calls). The limited dataset for this analysis also follows this trend, with 2018 and 2020 being relatively similar and an unusually quiet year in 2019. Generally, things are quiet in the first couple months of the year, with calls ramping up in May and June as snow starts to melt at lower elevations, then a busy peak in the hot summer months, and a gradual decline in the fall. 2020 started off relatively slow as COVID-19 kept people indoors, but calls shot up in the summer as people likely got antsy and wanted to get outside, ending the year with a new record high.</p>
-							
-                            <p id=text-indent>NSR team leader Mike Danks attributes the spike of calls in recent years to <a href="https://www.johnzada.com/planisphere/north-shore-rescue-vancouver-mike-danks/" target="_blank" rel="noopener noreferrer">social media use</a> - Instagram posts of beautiful mountain views are popular but often do not accurately portray the risks of the backcountry. Given Vancouver’s relative proximity to the North Shore Mountains, the easy accessibility to nature also “creates an illusion of relative safety”. Many SAR calls come from inexperienced hikers who are inspired by social media and make their way to the mountains only to find themselves woefully underprepared for the terrain and conditions. Just a few kilometres into the backcountry of the mountains, there are avalanche chutes, steep gullies, and often little to no cell service. From 2018 to 2020, medical reasons were consistently the primary reasons for SAR call-outs, with over 40% of the total every year. If you are thinking of venturing into the mountains, please follow NSR’s <a href=“https://www.northshorerescue.com/its-time-for-a-chat-metro-vancouver-6-tips-to-avoid-becoming-our-next-customer/” target=“_blank” rel=“noopener noreferrer”>six tips</a> to avoid becoming their next rescue.</p>
+							<figure>
+								<img src="images/sauder_bins.jpg" alt="sauder_bins" style="width: 100%; max-width: 550px; height: auto;">
+								<figcaption>Fig.1 - Rows of compost bins behind the Sauder Building</figcaption>
+							</figure>
 
-							<div id="mapid">
-							 <script src="static/js/callouts.js"></script></br> 
-							</div>
+							<p id=text-indent>Not all of the bin collection sites were as neat and tidy as the one pictured above unfortunately, and I received more than one strange look from passersby as I dug through the bins. After collecting and sorting the data, we used ArcMap to visualize the bin accessibility and contamination levels. As seen in the below figures, there was no clear correlation between the accessibility of the collection site and the level of contamination. Despite front of house (FOH) collection sites being situated next to main entrances and along popular paths, they had similar contamination levels as the back of house (BOH) sites. However, there was a trend of higher contamination rates near the center of campus, likely because the most frequented buildings were located there.
+							</p>
 
-							<p id=text-indent>The above is a heatmap of the SAR call-outs in the North Shore Mountains from 2018 to 2020, separated by year. Use the menu on the upper right to switch between the different years and different basemaps. The latitude and longitude positions were derived from the call-out descriptions and social media posts, and are only a rough estimate of the location of the call-out. To determine the locations, trail descriptions, pictures of the rescues, and my personal knowledge of the area were used. However, the points are only accurate to about 1 km, and the zoom level on the map has been restricted to reflect this. Not included in the heatmap are call-outs with vague location descriptions such as “in Lynn Headwaters Park” or “in the Cypress Bowl area”.</p>
+							<figure>
+								<img src="images/accessmap.png" alt="access_map" style="width: 100%; max-width: 550px; height: auto;">
+								<figcaption>Fig.2 - Accessibility of bin collection sites</figcaption>
+							</figure>
 
-							<p id=text-indent>Looking at the heatmap, there are three main areas that have frequently received SAR calls every year - St. Marks Summit, lower Grouse Mountain (Grouse Grind, BCMC), and Dog Mountain. This makes sense as these trails are very popular shorter hikes that can be done year-round (Grouse Grind is closed in winter) and are not too difficult. However, their reputation as easy-medium difficulty trails has led numerous hikers to show up underdressed and underprepared. In winter and early spring, these trails are still covered in snow, and the running shoes that many hikers wear will have little traction and grip. Other areas with numerous call-outs are The Lions, Crown Mountain, and Hanes Valley - these trails are less popular than the above but are longer and more technical, involving steep climbs and scrambling.</p>
-							
-							<p id=text-center>The table below shows the ten trails with the highest number of call-outs along with a breakdown of call-out reasons: </p>
+							<figure>
+								<img src="images/contaminmap.png" alt="contam_map" style="width: 100%; max-width: 550px; height: auto;">
+								<figcaption>Fig.3 - Contamination levels of bin collection sites</figcaption>
+							</figure>
 
-							<table><thead> <tr><th>Trail</th><th>Call-outs </br>(2018-2020)</th><th>Used </br>year-round</th><th></th><th>Medical</th><th>Lost</th><th>Stranded</th><th>Missing</th><th>Unknown</th> </tr></thead><tbody> <tr><td>Dog Mountain</td><td>15</td><td>Yes</td><td></td><td>67%</td><td>33%</td><td>0%</td><td>0%</td><td>0%</td></tr><tr><td>St Mark's Summit</td><td>14</td><td>Yes</td><td></td><td>57%</td><td>14%</td><td>22%</td><td>7%</td><td>0%</td></tr><tr><td>BCMC</td><td>11</td><td>Yes</td><td></td><td>18%</td><td>64%</td><td>9%</td><td>9%</td><td>0%</td></tr><tr><td>The Lions</td><td>11</td><td>No</td><td></td><td>27%</td><td>0%</td><td>64%</td><td>9%</td><td>0%</td></tr><tr><td>Crown Mountain</td><td>8</td><td>No</td><td></td><td>63%</td><td>0%</td><td>37%</td><td>0%</td><td>0%</td></tr><tr><td>Elsay Lake</td><td>7</td><td>No</td><td></td><td>71%</td><td>0%</td><td>0%</td><td>29%</td><td>0%</td></tr><tr><td>Hanes Valley</td><td>7</td><td>No</td><td></td><td>29%</td><td>0%</td><td>14%</td><td>43%</td><td>14%</td></tr><tr><td>Mount Fromme</td><td>7</td><td>Yes</td><td></td><td>43%</td><td>29%</td><td>14%</td><td>14%</td><td>0%</td></tr><tr><td>Norvan Falls</td><td>7</td><td>Yes</td><td></td><td>86%</td><td>0%</td><td>0%</td><td>14%</td><td>0%</td></tr><tr><td>Pump Peak</td><td>6</td><td>Yes</td><td></td><td>83%</td><td>0%</td><td>17%</td><td>0%</td><td>0%</td></tr></tbody> </table>
+							<p id=text-indent>In our presentation to Campus & Community Planning, we recommended that some sort of visual or physical blockade be constructed at front of house locations. Over 40% of the sites were classified as FOH and despite not having a higher rate of contamination, there was still evidence of outside contamination. We also recommended that compost bins be redistributed from the Sauder building as there were at least 10 empty bins there every time we did data collection. Furthermore, bin signage and composting education could be improved as the most common type of contamination observed was improper disposal of food and drink containers. 
 
-							<p id=asterisk>*Call-outs for the Grouse Grind are underrepresented in this dataset as many </br>of the rescues are done by the District of North Vancouver Fire and Rescue Services.</p>
+							</p>
 
-							<p id=text-indent>As noted above, the trails with the most call-outs are generally trails that are easy and accessible-year round. However, the Lions (Binkert) trail has a relatively high number of call-outs given that it is rarely used in the winter and spring. Many of the calls at The Lions were due to a stranded hiker on the West Lion, which requires a steep exposed scramble to get up and down from. In addition, a large number of missing hikers were reported in the Hanes Valley, which is a long and remote trail with notoriously poor cell reception. Hikers here should plan to take longer than usual and bring a satellite communicator or Personal Locator Beacon if possible. The breakdown for the BCMC trail shows that a large majority of calls were due to lost hikers, perhaps indicating the need for increased signage. The trail has many junctions with other trails and can be confusing to those hiking it for the first time. Although this was a limited dataset with a small sample size, I hope that it provided some valuable insight into where and why SAR calls usually occur and which trails to pay extra attention to.</p>
 						</div>
 					</div>
 
@@ -113,7 +85,6 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h3>Contact</h3>
 								<ul class="icons">
 									<li><a href="mailto:henrytang@htang.me" target=“_blank” rel=“noopener noreferrer” class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 									<li><a href="https://github.com/ohenryu" target=“_blank” rel=“noopener noreferrer” class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
