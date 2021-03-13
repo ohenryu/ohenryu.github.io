@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Removing Postal Code Spaces with Python</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="icons8-location-96.png"></link>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.6.0/build/styles/darcula.min.css">
+  		<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.6.0/build/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+	</head>
+
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+
+					<div class="container" id="navbar">
+						<a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+						<nav id=nav_new>
+							<ul>
+								<li><a href="index.html">Projects</a></li>
+								<li><a href="uploads//media//Resume.pdf" target=“_blank” rel=“noopener noreferrer”>Resume</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Removing Postal Code Spaces with Python</h1>
+							<hr>
+
+							<p id=text-indent>This Python script was written to resolve an issue that I encountered during my practicum at CBRE. I was assigned to geocode a large dataset (430,000+ rows) of clients based on postal codes. To make the dataset more manageable, it was split into 29 smaller Excel sheets based on the store location and client gender. During the first run of geocoding in ArcGIS Pro, only about 85% of the dataset received matches, which seemed off. I looked at  
+							</p>
+
+							<pre>
+								<code class='python'>
+
+	import os
+	import csv
+
+	# set the directory to parse
+	directory = 'C:\\Users\\User\\Documents\\New_Folder'
+
+	# set the row index of the postal code field
+	fieldindex = 9
+
+	# loop through directory looking for csv files
+	for filename in os.listdir(directory):
+		if filename.endswith(".csv"):
+
+			# get file path
+			input = os.path.join(directory, filename)
+
+			# set output file path
+			output = directory + '\\' + filename[:-4] + '_NEW.csv'
+
+			# set up csv reader and writer
+			with open(input, 'r') as infile, open(output, 'w', newline='') as outfile:
+				csvfile = csv.reader(infile, delimiter=',')
+				writer = csv.writer(outfile, delimiter=',')
+
+				# write the header to the output file
+				header = next(infile)
+				outfile.write(header)
+
+				# loop through csv rows
+				for row in csvfile:
+
+					# add value values to a list
+					rowvalues = []
+					for value in row:
+						rowvalues.append(value)
+
+					# remove space if postal code contains space
+					postalcode = row[fieldindex]
+					if len(postalcode) == 7:
+						postalcode = postalcode[0:3] + postalcode[4:7]
+
+					# update the row with edited postal code
+					rowvalues.pop(fieldindex)
+					rowvalues.insert(fieldindex, postalcode)
+
+					# write the row to output file
+					writer.writerow(rowvalues)
+
+								</code>
+							</pre>
+
+							<p style="font-weight: 550;font-size: 18px; margin-top: -2em;">Download the Python script <a href="uploads/files/removespaces.py" download target="_blank">here.</a></p>
+
+							<a href="uploads/files/removespaces.py" download target="_blank">here.</a>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<ul class="icons">
+									<li><a href="mailto:henrytang@htang.me" target=“_blank” rel=“noopener noreferrer” class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://github.com/ohenryu" target=“_blank” rel=“noopener noreferrer” class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://linkedin.com/in/tanghenry" target=“_blank” rel=“noopener noreferrer" class="icon brands style2 fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; 2021 Henry Tang</li><li>Design modified from: <a href="http://html5up.net" target=“_blank” rel=“noopener noreferrer">HTML5 UP</a></li><li>Hosted on: <a href="https://pages.github.com/" target=“_blank” rel=“noopener noreferrer">GitHub Pages</a></li>
+							</ul>
+						</div>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
