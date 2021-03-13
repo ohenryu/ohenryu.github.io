@@ -14,7 +14,7 @@
 import os
 import csv
 
-# set the directory to parse
+# select the directory to parse
 directory = 'C:\\Users\\User\\Documents\\New_Folder'
 
 # set the row index of the postal code field
@@ -24,7 +24,7 @@ fieldindex = 9
 for filename in os.listdir(directory):
     if filename.endswith(".csv"):
 
-        # get file path
+        # get file path of csv
         input = os.path.join(directory, filename)
 
         # set output file path
@@ -42,7 +42,7 @@ for filename in os.listdir(directory):
             # loop through csv rows
             for row in csvfile:
 
-                # add value values to a list
+                # add row values to a list
                 rowvalues = []
                 for value in row:
                     rowvalues.append(value)
