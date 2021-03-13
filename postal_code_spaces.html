@@ -44,9 +44,12 @@
 							<h1>Removing Postal Code Spaces with Python</h1>
 							<hr>
 
-							<p id=text-indent>This Python script was written to resolve an issue that I encountered during my practicum at CBRE. I was assigned to geocode a large dataset (430,000+ rows) of clients based on postal codes. To make the dataset more manageable, it was split into 29 smaller Excel sheets based on the store location and client gender. During the first run of geocoding in ArcGIS Pro, only about 85% of the dataset received matches, which seemed off. I looked at  
+							<p id=text-indent>This Python script was created to resolve an issue that I encountered during my practicum at CBRE. I was assigned to geocode a fairly large dataset (430,000+ rows) of clients based on a postal code field. To make the dataset more manageable, I split it into 29 smaller Excel sheets based on the store location and client gender. During the first run of geocoding in ArcGIS Pro, only about 85% of the dataset received matches, which seemed rather low. I looked at the rows that had no matches and noticed that many of them had spaces in the postal code (ex. V5C 3R8). This was problematic as the geocoding locator I was using had a postal code format with no spaces.
 							</p>
 
+							<p id=text-indent>Removing the spaces in the postal codes manually would take extremely long due to the  size of the dataset - I decided to write the following Python script to parse a directory for csv files, loop through each row in a csv file, and remove any spaces from the postal code field. The updated csv file would then be written to the same directory as a new file with a "_NEW" suffix. Using this script allowed me to edit all 29 files, loop through all 430,000+ rows and remove any spaces in under one minute. Running the updated dataset through the geocoder again yielded significant improvements, with over 98% of the dataset matched. The script allows for use with other similar datasets as the directory path and postal code field index can be edited in the code.
+
+							</p>
 							<pre>
 								<code class='python'>
 
@@ -102,8 +105,6 @@
 							</pre>
 
 							<p style="font-weight: 550;font-size: 18px; margin-top: -2em;">Download the Python script <a href="uploads/files/removespaces.py" download target="_blank">here.</a></p>
-
-							<a href="uploads/files/removespaces.py" download target="_blank">here.</a>
 
 						</div>
 					</div>
