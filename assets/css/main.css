@@ -2888,7 +2888,7 @@ input, select, textarea {
 /* Header */
 
 	.container {
-		width: 59%;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 
@@ -2957,27 +2957,37 @@ input, select, textarea {
 		width: 100%;
 	
 	}
-
+	@media only screen and (max-width: 2560px) {
+		.container {
+			width: 60%;
+		}
+	}
 
 	@media only screen and (max-width: 1920px) {
 		.container {
-			width: 80%;
+			width: 70%;
+		}
+		nav li {
+			margin-left: 40px;
 		}
 		#main {
 			width: 100%;
 		}
 	}
 	
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 810px) {
 		.container {
-			width: 90%;
+			max-width: 90%;
+		}
+		nav li {
+			margin-left: 25px;
 		}
 		#main {
 			width: 100%;
 		}
 	}
 
-	@media only screen and (max-width: 480px) {
+	@media only screen and (max-width: 780px) {
 		#logo {
 			width: 65%;
 			float: none;

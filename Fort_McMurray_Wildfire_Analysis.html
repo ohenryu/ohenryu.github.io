@@ -43,9 +43,36 @@
 		<!-- Main -->
 		<div id="main">
 			<div class="inner">
-                <div id="about">
+                <div>
                     <h1>Housing Vulnerability in the</br> Fort McMurray Wildfire</h1>
                     <hr>
+
+					<p style="font-weight: 550;font-size: 18px;">Link to the full analysis available <a href='https://blogs.ubc.ca/fortmcmurraywildfire/' target=“_blank” rel="noopener noreferrer" style="font-weight: 550; text-decoration: underline;">here.</a></p>
+
+					<p id=text-indent>Wildfires have become more dangerous and intense in the past decades, along with an increasing urban growth in wildfire-prone areas. These areas are known as the Wildland-Urban Interface (WUI), in which forest and wildland fuels intersect with human development. Not only does this urban expansion put humans more at risk from wildfires, it also creates more of them as humans are the <a href='https://www.pnas.org/content/early/2017/02/21/1617394114' target="blank" rel="noopener noreferrer" >leading cause</a> of wildfires, especially in the WUI. Fort McMurray is a classic example of one such WUI area, having increased its population by over 70% in just 15 years and being surrounded by highly flammable boreal forest. A Google Earth Engine <a href='https://earthengine.google.com/timelapse/#v=56.70814,-111.39938,9.833,latLng&t=1.09&ps=50&bt=19840101&et=20181231&startDwell=0&endDwell=0' target='blank' rel='noopener noreferrer'>timelapse</a> shows the extent of the rapid urban growth over the past three decades and the increase of the WUI. In May of 2016, a devastating wildfire swept through the city of Fort McMurray, destroying over 2400 buildings and forcing the evacuation of over 80,000 people - it later became known as the costliest natural disaster in Canadian history. As natural disasters are known to disproportionately affect the poor, I wanted to look at which areas of the city were damaged and identify any trends related to dwelling density and median household income. In addition, I was curious if <a href="http://salmo.ca/wp-content/uploads/2016/05/FireSmart-Priority-Zones-Proof-5.pdf" target="_blank" rel="noopener noreferrer">FireSmart practices</a> may have played a role in reducing the damage of the wildfire.
+					</p>
+
+					<fig>
+						<img src='images/before_after.png' alt="before_after" style="width: 100%; max-width: 700px; height: auto;">
+						<figcaption>Fig.1 - Comparison of the city before and after the wildfire</figcaption>
+					</fig>
+
+					<p id=text-indent>Using a <a href='http://firemap.rmwb.ca/fire-map.html#12/56.7050/-111.4408' target="blank" rel='noopener noreferrer'>comparison map</a> from the Regional Municipality of Wood Buffalo, I zoomed in to each dissemination area and  counted the number of burned/destroyed dwellings. Next, I performed an OLS regression using the percent of dwellings destroyed in a dissemination area as the dependent variable and both housing density and median household income as independent variables. As seen below, there was no strong correlation between these variables. In addition, buffers were created around the hardest hit dissemination areas for FireSmart recommended Priority Zones of 10m, 30m, and 100m. These buffers did not appear to impede the development of the wildfire and satellite images show that many neighborhoods were either in close proximity to the forest or to urban green areas with no firebreaks. Although there were no direct casualties from the wildfire, with better preparation and fire management practices, many more homes could have potentially been saved. </p>
+
+					<div style="width: 50%; float:left;">
+						<fig>
+							<img src='images/BurnOLS.jpg' alt="before_after" style="width: 100%; max-width: 350px; height: auto;">
+							<figcaption>Fig.2 - Results of the OLS regression</figcaption>
+						</fig>
+					</div>
+					<div style="width: 50%; float:right;">
+						<fig>
+							<img src='images/FireSmart_Buffers.jpg' alt="before_after" style="width: 100%; max-width: 350px; height: auto;">
+							<figcaption>Fig.3 - FireSmart buffers placed around burned areas </figcaption>
+						</fig>
+						
+					</div>
+					<p id=text-indent>This was a very basic analysis of fire vulnerability based off of my limited GIS skillset and knowledge at the time. The quality of the maps created also leave a lot to be desired, as seen above. This analysis was performed on a macroscopic scale largely based on dissemination areas but many factors, on the level of an individual dwelling, may have impacted the spread and destruction of the wildfire as well. I also did not incorporate wind data but this likely had a significant effect on the travel direction of the wildfire. In the future, I hope to revisit this analysis to add more detail and also see if FireSmart practices have improved since the tragedy in 2016.</p>
 
                 </div>
 			</div>
