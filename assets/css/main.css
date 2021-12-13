@@ -203,8 +203,9 @@ input, select, textarea {
 		font-weight: 300;
 	}
 		#text-indent {
-			text-indent: 1.5em;
+			text-indent: 2em;
 			text-align: left;
+			word-spacing: 1px;
 		}
 
 	h1 {
