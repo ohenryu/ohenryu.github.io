@@ -1,1 +1,1 @@
-My portfolio website hosted on Github Pages.
+My GIS portfolio website hosted on Github Pages.
