@@ -3737,6 +3737,7 @@ input, select, textarea {
 
 #desc {
 	margin-bottom: 1.2em;
+	text-align: center;
 }
 
 figcaption {
